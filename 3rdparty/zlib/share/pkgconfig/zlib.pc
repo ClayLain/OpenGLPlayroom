@@ -1,0 +1,13 @@
+prefix=C:/zlibout
+exec_prefix=C:/zlibout
+libdir=C:/zlibout/lib
+sharedlibdir=C:/zlibout/lib
+includedir=C:/zlibout/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.12
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
