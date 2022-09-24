@@ -26,14 +26,21 @@ struct ShaderInfo
 
 class Package
 {
+public:
+    explicit Package(
+            const PackageId &id,
+            const PackageVersion &version,
+            const std::vector<ShaderInfo> &shaders
+            );
 
+    PackageId id() const;
+    PackageVersion version() const;
+    const std::vector<ShaderInfo> & shaders() const;
 
 private:
     PackageId m_id;
     PackageVersion m_version;
     std::vector<ShaderInfo> m_shaders;
-
-    friend class PackageLoader;
 };
 
 }
