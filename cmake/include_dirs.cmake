@@ -1,3 +1,5 @@
+include_guard(GLOBAL)
+
 function(cleanup_includedir INCLUDEDIR HEADERS)
     file(GLOB_RECURSE old_headers LIST_DIRECTORIES false "${INCLUDEDIR}/*")
     list(SORT HEADERS)

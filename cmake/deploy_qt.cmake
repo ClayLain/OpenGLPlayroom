@@ -1,3 +1,5 @@
+include_guard(GLOBAL)
+
 find_program(WINDEPLOYQT NAMES windeployqt HINTS "${QTDIR}" ENV QTDIR PATH_SUFFIXES bin)
 
 if(NOT WINDEPLOYQT)
