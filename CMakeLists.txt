@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include("cmake/compile_shader_package.cmake")
 include("cmake/deploy_qt.cmake")
+include("cmake/deploy_glbinding.cmake")
 include("cmake/include_dirs.cmake")
 include(GoogleTest)
 

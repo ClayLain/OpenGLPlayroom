@@ -21,3 +21,4 @@ target_link_libraries(opengl_playroom
 )
 
 target_compile_definitions(opengl_playroom PRIVATE GLFW_INCLUDE_NONE)
+deploy_glbinding(TARGET opengl_playroom)
