@@ -1,6 +1,6 @@
 #include "Error.h"
 
-namespace shaders
+namespace error_handling
 {
 
 Error::Error(const std::string &description)

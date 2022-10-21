@@ -2,11 +2,11 @@
 
 #include <string>
 
-#include <tl/expected.hpp>
+#include <error_handling/Error.h>
 #include <quazip/quazip.h>
+#include <tl/expected.hpp>
 
 #include "Package.h"
-#include "Error.h"
 
 namespace shaders
 {
@@ -14,12 +14,12 @@ namespace shaders
 class PackageLoader
 {
 public:
-    tl::expected<Package, Error> load(const std::string &path);
+    tl::expected<Package, error_handling::Error> load(const std::string &path);
 
 private:
-    tl::expected<QString, Error> readFileContent(const QString &path);
-    tl::expected<ShaderInfo, Error> parseShaderInfo(const QJsonObject &object);
-    tl::expected<Package, Error> parseManifest(const QString &manifestContent);
+    tl::expected<QString, error_handling::Error> readFileContent(const QString &path);
+    tl::expected<ShaderInfo, error_handling::Error> parseShaderInfo(const QJsonObject &object);
+    tl::expected<Package, error_handling::Error> parseManifest(const QString &manifestContent);
 
     QuaZip m_archive;
 };

@@ -4,7 +4,7 @@
 
 #include <tl/expected.hpp>
 
-namespace shaders
+namespace error_handling
 {
 
 #define CHECK_AND_RETURN(RESULT)                  \
