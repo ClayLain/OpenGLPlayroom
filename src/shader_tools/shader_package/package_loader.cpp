@@ -1,4 +1,4 @@
-#include "PackageLoader.h"
+#include "package_loader.h"
 
 #include <quazip/quazipfile.h>
 

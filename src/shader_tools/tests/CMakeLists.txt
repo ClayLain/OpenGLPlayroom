@@ -1,5 +1,5 @@
 set(test_source
-    PackageLoader_test.cpp
+    package_loader_test.cpp
 )
 
 set(fragment_shaders

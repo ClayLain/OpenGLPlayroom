@@ -2,11 +2,11 @@
 
 #include <string>
 
-#include <error_handling/Error.h>
+#include <error_handling/error.h>
 #include <quazip/quazip.h>
 #include <tl/expected.hpp>
 
-#include "Package.h"
+#include "package.h"
 
 namespace shaders
 {

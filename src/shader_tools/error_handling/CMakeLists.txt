@@ -1,9 +1,9 @@
 set(public_headers
-    Error.h
+    error.h
 )
 
 set(source
-    Error.cpp
+    error.cpp
 )
 
 add_library(error_handling STATIC ${source} ${public_headers})

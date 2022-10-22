@@ -1,11 +1,11 @@
 set(public_headers
-    Package.h
-    PackageLoader.h
+    package.h
+    package_loader.h
 )
 
 set(source
-    Package.cpp
-    PackageLoader.cpp
+    package.cpp
+    package_loader.cpp
 )
 
 add_library(shader_package STATIC ${source} ${public_headers})

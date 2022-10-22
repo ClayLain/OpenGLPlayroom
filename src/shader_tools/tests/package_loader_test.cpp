@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include <shader_package/PackageLoader.h>
+#include <shader_package/package_loader.h>
 
 namespace shaders_test
 {
