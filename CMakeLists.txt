@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include("cmake/compile_shader_package.cmake")
 include("cmake/deploy_qt.cmake")
-include("cmake/deploy_glbinding.cmake")
+include("cmake/deploy_gllibs.cmake")
 include("cmake/include_dirs.cmake")
 include(GoogleTest)
 
@@ -28,12 +28,14 @@ find_package(Qt5 REQUIRED COMPONENTS Core)
 find_package(glbinding REQUIRED)
 find_package(globjects REQUIRED)
 
+add_subdirectory(3rdparty/cxxopts)
 add_subdirectory(3rdparty/expected)
 add_subdirectory(3rdparty/glfwpp)
 add_subdirectory(3rdparty/googletest)
 add_subdirectory(3rdparty/quazip)
 add_subdirectory(3rdparty/semver)
 add_subdirectory(3rdparty/stduuid)
+
 add_subdirectory(scripts)
 
 enable_testing()

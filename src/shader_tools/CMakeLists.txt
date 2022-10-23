@@ -1,4 +1,5 @@
 add_subdirectory(error_handling)
 add_subdirectory(file_utils)
 add_subdirectory(shader_package)
+add_subdirectory(shader_preview)
 add_subdirectory(tests)
