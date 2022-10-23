@@ -23,4 +23,7 @@ private:
     std::string m_description;
 };
 
+template <typename T>
+using Result = tl::expected<T, Error>;
+
 }

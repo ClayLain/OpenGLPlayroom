@@ -1,5 +1,6 @@
 set(test_source
     package_loader_test.cpp
+    file_utils_test.cpp
 )
 
 set(fragment_shaders
@@ -12,12 +13,14 @@ set(vertex_shaders
     test_data/default2.vert
 )
 
+file(COPY "${CMAKE_CURRENT_LIST_DIR}/test_data/test_file.txt" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
 
 add_executable(shader_tools_test ${test_source})
 target_link_libraries(shader_tools_test
     PUBLIC
     GTest::gtest_main
     shader_package
+    file_utils
 )
 add_dependencies(shader_package test_package)
 
